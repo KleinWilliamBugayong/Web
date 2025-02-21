@@ -1,0 +1,89 @@
+/* artworks.css */
+
+.action-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.add-action-btn, .dropdown-btn, .filter-btn {
+    margin-left: 10px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-action-btn {
+    background-color: #8b1e3f;
+    color: white;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.artwork-photo {
+    width: 50px;
+    height: 50px;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+.edit-btn, .delete-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.edit-btn i {
+    color: #4CAF50;
+}
+
+.delete-btn i {
+    color: #8b1e3f;
+}
+
+.artworks-table {
+    overflow-x: auto;
+    background-color: white; /* Makes the whole table section white */
+    padding: 20px; /* Adds spacing inside */
+    border-radius: 10px; /* Rounds the corners a bit */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
